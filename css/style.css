@@ -187,8 +187,8 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-.placeholder { 
-  color: #aaa; 
+.placeholder {
+  color: #aaa;
 }
 
 .container-int{
@@ -653,8 +653,8 @@ div.list-posts ul li a:hover{
   -moz-border-radius: 2px;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out; 
-  outline: none; 
+  -o-transition: all 0.4s ease-in-out;
+  outline: none;
 }
 
 .btn-lg {
@@ -1287,4 +1287,23 @@ footer
 .btn-success:hover
 {
 	background-color: #d1133a !important;
+}
+
+#btn_facebook{
+	color: #777;
+}
+
+#btn_facebook:hover {
+	color: rgb(59,89,152);
+}
+
+#btn_twitter{
+	color: #777;
+}
+#btn_twitter:hover {
+	color: rgb(0, 172, 237);
+}
+
+#btn_gplus{
+	color: #777;
 }
