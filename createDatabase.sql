@@ -7,10 +7,11 @@ CREATE TABLE IF NOT EXISTS startups
 (
 	id INT NOT NULL AUTO_INCREMENT,
 	randomid VARCHAR(32) NOT NULL,
-	nom VARCHAR(25) NOT NULL,
+	nom VARCHAR(100) NOT NULL,
 	description VARCHAR(1000) NOT NULL,
 	PRIMARY KEY (id),
-	UNIQUE (randomid)
+	UNIQUE (randomid),
+	UNIQUE (nom)
 );
 
 -- Create table of votes

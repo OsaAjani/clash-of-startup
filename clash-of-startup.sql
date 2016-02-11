@@ -31,7 +31,7 @@ CREATE TABLE `matchs` (
   KEY `startup_id_two` (`startup_id_two`),
   CONSTRAINT `matchs_ibfk_1` FOREIGN KEY (`startup_id_one`) REFERENCES `startups` (`id`) ON DELETE CASCADE,
   CONSTRAINT `matchs_ibfk_2` FOREIGN KEY (`startup_id_two`) REFERENCES `startups` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `matchs` (
 
 LOCK TABLES `matchs` WRITE;
 /*!40000 ALTER TABLE `matchs` DISABLE KEYS */;
-INSERT INTO `matchs` VALUES (2,3,4),(3,1,3),(4,2,3),(5,4,5),(6,1,2),(7,2,4),(8,2,4),(9,2,3),(10,4,5),(11,2,5),(12,2,3),(13,3,5),(14,1,4),(15,3,4),(16,4,5),(17,1,5),(18,2,5),(19,2,5),(20,3,5),(21,2,4),(22,1,4),(23,2,5),(24,2,3),(25,1,3),(26,1,4),(27,4,5),(28,2,5),(29,2,4),(30,4,5),(31,3,5),(32,1,4),(33,1,5),(34,2,5),(35,4,5),(36,2,5),(37,1,4),(38,1,2),(39,1,2),(40,1,4),(41,2,5),(42,2,5),(43,2,4),(44,1,3),(45,1,2);
+INSERT INTO `matchs` VALUES (3,1,3),(4,2,3),(6,1,2),(9,2,3),(11,2,5),(12,2,3),(13,3,5),(17,1,5),(18,2,5),(19,2,5),(20,3,5),(23,2,5),(24,2,3),(25,1,3),(28,2,5),(31,3,5),(33,1,5),(34,2,5),(36,2,5),(38,1,2),(39,1,2),(41,2,5),(42,2,5),(44,1,3),(45,1,2),(49,2,5);
 /*!40000 ALTER TABLE `matchs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -54,11 +54,12 @@ DROP TABLE IF EXISTS `startups`;
 CREATE TABLE `startups` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `randomid` varchar(32) NOT NULL,
-  `nom` varchar(25) NOT NULL,
+  `nom` varchar(100) NOT NULL,
   `description` varchar(1000) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `randomid` (`randomid`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+  UNIQUE KEY `randomid` (`randomid`),
+  UNIQUE KEY `nom` (`nom`)
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -67,7 +68,7 @@ CREATE TABLE `startups` (
 
 LOCK TABLES `startups` WRITE;
 /*!40000 ALTER TABLE `startups` DISABLE KEYS */;
-INSERT INTO `startups` VALUES (1,'56b7c025c2c9e','LogBerry','Création d\'un boîtier de log pour les PME ne disposant pas de service informatique'),(2,'56b7c064560e1','ASSINIE LA VIE','Création d\'un dispensaire médical pour femmes enceintes en Côte d\'Ivoire'),(3,'56b7c064561be','D.I.P','Création d\'un système de gestion centralisé de tous les objets et protocoles domotiques'),(4,'56b7c0645608b','Soit créatif avec Bibou','Création d\'un livre intéractif pour les enfants de 3 à 6 ans.'),(5,'56b7c0645617a','InCouch','Création d\'une plateforme de streaming gratuite via un client lourd pour la diffusion de vieux films tombés dans le domaine publique.');
+INSERT INTO `startups` VALUES (1,'56b7c025c2c9e','LogBerry','Création d\'un boîtier de log pour les PME ne disposant pas de service informatique'),(2,'56b7c064560e1','ASSINIE LA VIE','Création d\'un dispensaire médical pour femmes enceintes en Côte d\'Ivoire'),(3,'56b7c064561be','D.I.P','Création d\'un système de gestion centralisé de tous les objets et protocoles domotiques'),(5,'56b7c0645617a','InCouch','Création d\'une plateforme de streaming gratuite via un client lourd pour la diffusion de vieux films tombés dans le domaine publique.'),(38,'56bc8e9b97886','Sois créatif avec Bibou',''),(39,'56bc8e9cc51d8','Pluchovor',''),(40,'56bc8e9e0533f','Shoes Choices',''),(41,'56bc8ea091db9','Tori',''),(42,'56bc8ea4bc7be','PhotoFashion',''),(43,'56bc8eaa13439','Nails Cover',''),(44,'56bc8eab3d3e9','Les Illusions Architecturales',''),(45,'56bc8eaee9451','WiTime',''),(46,'56bc8eafba8df','Product & Go',''),(47,'56bc8eb0857f0','Création d’un jeu de société',''),(48,'56bc8eb32f282','Native Project, Marque vestimentaire',''),(49,'56bc8eb39ca81','L’ANIMATION EN DIMENSION 2.5',''),(50,'56bc8eb4c59a8','Vide ton Frigo',''),(51,'56bc8eb8b6ac9','A vos concours (Mini Maousse)',''),(52,'56bc8ebe6c51d','POP UP STORE, magasin éphémère, concept store.',''),(53,'56bc8ebf6098b','SOS SPA','');
 /*!40000 ALTER TABLE `startups` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -99,7 +100,7 @@ CREATE TABLE `votes` (
 
 LOCK TABLES `votes` WRITE;
 /*!40000 ALTER TABLE `votes` DISABLE KEYS */;
-INSERT INTO `votes` VALUES (1,'127.0.0.1','2016-02-08 03:07:58',3,4,2,3,10),(2,'127.0.0.1','2016-02-08 03:08:29',1,1,4,5,25),(3,'127.0.0.1','2016-02-08 03:08:43',2,4,1,4,25),(4,'127.0.0.1','2016-02-08 03:47:35',2,5,2,4,50),(5,'127.0.0.1','2016-02-08 03:47:59',2,5,1,3,5),(6,'127.0.0.1','2016-02-08 03:48:16',2,4,2,2,75),(7,'127.0.0.1','2016-02-08 03:48:34',3,4,5,1,10),(8,'127.0.0.1','2016-02-08 03:48:58',4,1,2,4,5),(9,'127.0.0.1','2016-02-08 15:21:24',3,4,4,1,10),(10,'127.0.0.1','2016-02-08 15:21:33',4,4,4,1,10),(11,'127.0.0.1','2016-02-08 15:22:00',1,2,4,5,25),(12,'127.0.0.1','2016-02-10 22:29:58',2,3,1,2,25),(13,'127.0.0.1','2016-02-10 22:35:57',4,3,1,4,0),(14,'127.0.0.1','2016-02-11 09:12:19',3,3,1,3,50),(15,'127.0.0.1','2016-02-11 09:22:05',4,3,4,3,25),(16,'127.0.0.1','2016-02-11 09:36:58',1,1,1,1,0);
+INSERT INTO `votes` VALUES (1,'127.0.0.1','2016-02-08 03:07:58',3,4,2,3,10),(2,'127.0.0.1','2016-02-08 03:08:29',1,1,4,5,25),(3,'127.0.0.1','2016-02-08 03:08:43',2,4,1,4,25),(4,'127.0.0.1','2016-02-08 03:47:35',2,5,2,4,50),(5,'127.0.0.1','2016-02-08 03:47:59',2,5,1,3,5),(6,'127.0.0.1','2016-02-08 03:48:16',2,4,2,2,75),(7,'127.0.0.1','2016-02-08 03:48:34',3,4,5,1,10),(9,'127.0.0.1','2016-02-08 15:21:24',3,4,4,1,10),(11,'127.0.0.1','2016-02-08 15:22:00',1,2,4,5,25),(12,'127.0.0.1','2016-02-10 22:29:58',2,3,1,2,25),(14,'127.0.0.1','2016-02-11 09:12:19',3,3,1,3,50),(16,'127.0.0.1','2016-02-11 09:36:58',1,1,1,1,0);
 /*!40000 ALTER TABLE `votes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -112,4 +113,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-02-11  9:51:18
+-- Dump completed on 2016-02-11 14:39:35
