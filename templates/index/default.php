@@ -2,7 +2,7 @@
 	$incs = new internalIncs();
 	$incs->head('Accueil');
 ?>
-<?php 
+<?php
 	$incs->header('accueil');
 	$incs->carousel();
 ?>
