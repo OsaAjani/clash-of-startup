@@ -170,7 +170,7 @@ jQuery(document).ready(function ()
 
 	jQuery('body').on('click', '.startups-order-button', function ()
 	{
-		jQuery('body').find('.startup-list-container').html('<div class="startup-list-loader"><div class="fa fa-spinner fa-spin text-center"></div></div>');
+		jQuery('body').find('.startup-list-container .startup-list-loader-container').html('<div class="startup-list-loader"><div class="fa fa-spinner fa-spin text-center"></div></div>');
 		jQuery('body').find('.startups-order-button').removeClass('active');
 		jQuery(this).addClass('active');
 		var url = HTTP_PWD + "classement/order/" + jQuery(this).attr('value');

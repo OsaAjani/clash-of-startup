@@ -101,11 +101,11 @@ body{
 }
 
 a {
-  color: #16A085;
+  color: #D1133A;
 }
 
 a:hover, a:focus {
-  color: #1ABC9C;
+  color: #F1335A;
   text-decoration: none;
 }
 
@@ -156,7 +156,7 @@ p {
 
 blockquote {
   padding: 15px 20px;
-  border-left: 5px solid #16A085;
+  border-left: 5px solid #D1133A;
   background: #FAFAFA;
 }
 
@@ -168,13 +168,13 @@ blockquote p {
 .navbar{
   margin: 0;
   border: none;
-  border-bottom: 2px solid #16A085;
+  border-bottom: 2px solid #D1133A;
   border-radius: 0;
 }
 
 .navbar-inverse {
-  background-color: #1ABC9C;
-  border-color: #16A085;
+  background-color: #F1335A;
+  border-color: #D1133A;
 }
 
 .navbar-inverse .navbar-brand{
@@ -199,30 +199,30 @@ blockquote p {
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   color: #ffffff;
-  background-color: #16A085;
+  background-color: #D1133A;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
   color: #ffffff;
-  background-color: #16A085;
+  background-color: #D1133A;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #16A085;
+  background-color: #D1133A;
 }
 
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-  background-color: #16A085;
+  background-color: #D1133A;
 }
 
 .navbar-inverse .navbar-toggle {
-  border-color: #16A085;
+  border-color: #D1133A;
   outline: none;
 }
 
 .dropdown-menu{
-  background-color: #16A085;
+  background-color: #D1133A;
   border: none;
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -313,7 +313,7 @@ blockquote p {
 }
 
 .social-networks div.icon-social.hover{
-  background: #2c3e50;
+  background: #d1133a;
 }
 
 .latest-tweets{
@@ -456,7 +456,7 @@ div.list-posts ul li a:hover{
 
 .post-meta .fa{
   margin: 0 5px 0 15px;
-  color: #16A085;
+  color: #D1133A;
 }
 
 .post-meta .fa.first{
@@ -501,13 +501,13 @@ div.list-posts ul li a:hover{
 }
 
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-  background-color: #16A085;
+  background-color: #D1133A;
 }
 
 /* tags */
 
 .tags a{
-  background: #1ABC9C;
+  background: #F1335A;
   padding: 6px 15px;
   margin: 0 0 10px 0;
   display: inline-block;
@@ -522,7 +522,7 @@ div.list-posts ul li a:hover{
 }
 
 .tags a:hover{
-  background: #16A085;
+  background: #D1133A;
 }
 
 /* Tabs */
@@ -564,7 +564,7 @@ div.list-posts ul li a:hover{
 }
 
 .label-default {
-  background-color: #1ABC9C;
+  background-color: #F1335A;
 }
 
 /* Buttons */
@@ -585,15 +585,15 @@ div.list-posts ul li a:hover{
 
 .btn-primary {
   color: #FFF;
-  background-color: #1ABC9C;
+  background-color: #F1335A;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary{
-  background-color: #16A085;
+  background-color: #D1133A;
 }
 
 .btn-info{
-  background-color: #2C3E50;
+  background-color: #d1133a;
 }
 
 .btn-info:hover{
@@ -650,7 +650,7 @@ div.list-posts ul li a:hover{
 }
 
 .form-control:focus{
-  border-color: #1ABC9C;
+  border-color: #F1335A;
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -745,7 +745,7 @@ div.list-posts ul li a:hover{
   -moz-border-radius: 40px;
   text-align: center;
   font-size: 30px;
-  background: #1ABC9C;
+  background: #F1335A;
   color: #fff;
   line-height: 70px;
   margin: 0 auto;
@@ -828,7 +828,7 @@ img.monster{
 }
 
 .pricing-table .panel-default > .panel-heading{
-  background-color: #16A085;
+  background-color: #D1133A;
   color: #FFF;
   border-radius: 0;
   -webkit-border-radius: 0;
@@ -837,7 +837,7 @@ img.monster{
 }
 
 .pricing-table .panel-default > .panel-body{
-  background-color: #1ABC9C;
+  background-color: #F1335A;
   color: #FFF;
 }
 
@@ -848,7 +848,7 @@ img.monster{
 
 /* Footer Styles */
 footer {
-  background: #34495E;
+  background: #f1335a;
   padding: 50px 0;
   color: #BDC3C7;
   font-size: 12px;
@@ -885,7 +885,7 @@ footer h3{
 }
 
 footer .form-control{
-  background: #2C3E50;
+  background: #d1133a;
   border: none;
   color: #ecf0f1;
   font-size: 12px;
@@ -907,7 +907,7 @@ footer .input-group-btn .btn{
 }
 
 .footer-after{
-  background: #2c3e50;
+  background: #d1133a;
   padding: 20px 0;
   font-size: 12px;
 }
@@ -990,8 +990,8 @@ footer .input-group-btn .btn{
 .versus-radius
 {
 	width: 75%;
-	background-color: #1ABC9C;
-	border: 2px solid #16A085;
+	background-color: #F1335A;
+	border: 2px solid #D1133A;
 	border-radius: 9999px;
 	font-size: 3em;
 	color: #fff;
@@ -1081,7 +1081,7 @@ footer
 /** FORM CONNEXION **/
 .colored-background
 {
-	background: #34495E;
+	background: #f1335a;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1200,4 +1200,13 @@ footer
 {
 	text-align: center;
 	font-size: 50px;
+}
+
+.btn-success
+{
+	background-color: #f1335a !important;
+}
+.btn-success:hover
+{
+	background-color: #d1133a !important;
 }
