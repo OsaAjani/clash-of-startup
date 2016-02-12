@@ -64,13 +64,11 @@ function changeUnes(data)
 	var firstUne = jQuery('body').find('#firstUne');
 	var secondUne = jQuery('body').find('#secondUne');
 
-	firstUne.find('img').attr('src', HTTP_PWD + "img/pixel.png");
-	firstUne.find('img').attr('src', HTTP_PWD + "img/unes/" + data.newStartups[0].randomid + ".png");
+	firstUne.find('img').replaceWith('<img src="' + HTTP_PWD + 'img/unes/' + data.newStartups[0].randomid + '.png' + '" alt="' + data.newStartups[0].nom + '" />');
 	firstUne.find('.startupNom').text(data.newStartups[0].nom);
 	firstUne.find('.startupDescription').text(data.newStartups[0].description);
 
-	secondUne.find('img').attr('src', HTTP_PWD + "img/pixel.png");
-	secondUne.find('img').attr('src', HTTP_PWD + "img/unes/" + data.newStartups[1].randomid + ".png");
+	secondUne.find('img').replaceWith('<img src="' + HTTP_PWD + 'img/unes/' + data.newStartups[1].randomid + '.png' + '" alt="' + data.newStartups[1].nom + '" />');
 	secondUne.find('.startupNom').text(data.newStartups[1].nom);
 	secondUne.find('.startupDescription').text(data.newStartups[1].description);
 
@@ -81,17 +79,15 @@ function changeUnes(data)
 	secondUne.find('.une-comparaison').attr('randomid', data.newStartups[1].randomid);
 
 	nbImgLoad = 0;
-	jQuery('.container-comparaison').find('img').each(function (e) {
-		jQuery(this).on('load', function() {
-			nbImgLoad ++;
-			if (nbImgLoad == 2)
-			{
-				nbImgLoad = 0;
-				jQuery('.versus-text').removeClass('hidden');	
-				jQuery('.versus-icon').addClass('hidden');
-				jQuery('body').find('#firstUne').removeClass('fadeOutLeft').setAnimation('fadeInLeft');
-				jQuery('body').find('#secondUne').removeClass('fadeOutRight').setAnimation('fadeInRight');
-			}
+	jQuery('.container-comparaison').find('img').on('load', function() {
+		nbImgLoad ++;
+		if (nbImgLoad == 2)
+		{
+			nbImgLoad = 0;
+			jQuery('.versus-text').removeClass('hidden');	
+			jQuery('.versus-icon').addClass('hidden');
+			jQuery('body').find('#firstUne').removeClass('fadeOutLeft').setAnimation('fadeInLeft');
+			jQuery('body').find('#secondUne').removeClass('fadeOutRight').setAnimation('fadeInRight');
 		}
 	});
 }
