@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 12 Février 2016 à 11:04
+-- Généré le :  Ven 12 Février 2016 à 11:09
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -49,7 +49,7 @@ INSERT INTO `startups` (`id`, `randomid`, `nom`, `description`) VALUES
 (55, '56bc9a63d8484', 'Pluchovor', 'Création d''un site d''adoption de peluches.'),
 (56, '56bc9a6427afb', 'Shoes Choices', 'Création d''une marque de chaussures ouvertes (estivales), ayant pour cible le sexe féminin, de l''enfant à l''adulte.'),
 (58, '56bc9a6550669', 'PhotoFashion', 'Création de motifs et impression de photo sur tissu grâce à une impression numérique.'),
-(59, '56bc9a6658250', 'Nails Cover', ''),
+(59, '56bc9a6658250', 'Nails Cover', 'Création d''un système de simulation permettant de tester les vernis à ongles.'),
 (60, '56bc9a66bd8c7', 'Les Illusions Architecturales', 'Création d''une perte de repère spatial, d''une désorientation, afin de laisser à l''utilisateur une liberté totale dans ses créations, quelle que soit sa spécialité (mode, espace, produit, communication visuelle), sur le thème de l''illusion.'),
 (61, '56bc9a6774bbd', 'WiTime', 'Permettre à l’utilisateur de s’informer en temps réel sur l’état des files d’attentes depuis une application mobile ou un site web à l’aide d’une analyse vidéo.'),
 (62, '56bc9a67b4d49', 'Product & Go', 'Création d''une interface entre les producteurs locaux et les particuliers.'),
