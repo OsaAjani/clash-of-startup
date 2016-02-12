@@ -9,13 +9,13 @@
 				<li class="<?php echo ($currentPage == 'accueil') ? 'active' : ''; ?>">
 					<a href="<?php echo $this->generateUrl(''); ?>" title="Retourner à l'accueil">Accueil</a>
 				</li>
-<!--				<li class="<?php echo ($currentPage == 'match') ? 'active' : ''; ?>">
+				<li class="<?php echo ($currentPage == 'match') ? 'active' : ''; ?>">
 					<a href="<?php echo $this->generateUrl('match'); ?>" title="Comparer des startups">Comparer des startups</a>
 				</li>
 				<li class="<?php echo ($currentPage == 'classement') ? 'active' : ''; ?>">
 					<a href="<?php echo $this->generateUrl('classement'); ?>" title="Classement des startups">Classement des startups</a>
 				</li>
--->			</ul>
+			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container -->
 </nav>
