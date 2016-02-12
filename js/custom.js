@@ -79,15 +79,17 @@ function changeUnes(data)
 	secondUne.find('.une-comparaison').attr('randomid', data.newStartups[1].randomid);
 
 	nbImgLoad = 0;
-	jQuery('.container-comparaison').find('img').on('load', function() {
-		nbImgLoad ++;
-		if (nbImgLoad == 2)
-		{
-			nbImgLoad = 0;
-			jQuery('.versus-text').removeClass('hidden');	
-			jQuery('.versus-icon').addClass('hidden');
-			jQuery('body').find('#firstUne').removeClass('fadeOutLeft').setAnimation('fadeInLeft');
-			jQuery('body').find('#secondUne').removeClass('fadeOutRight').setAnimation('fadeInRight');
+	jQuery('.container-comparaison').find('img').each(function (e) {
+		jQuery(this).on('load', function() {
+			nbImgLoad ++;
+			if (nbImgLoad == 2)
+			{
+				nbImgLoad = 0;
+				jQuery('.versus-text').removeClass('hidden');	
+				jQuery('.versus-icon').addClass('hidden');
+				jQuery('body').find('#firstUne').removeClass('fadeOutLeft').setAnimation('fadeInLeft');
+				jQuery('body').find('#secondUne').removeClass('fadeOutRight').setAnimation('fadeInRight');
+			}
 		}
 	});
 }

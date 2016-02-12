@@ -4,7 +4,7 @@
 		<div class="row">
 			<div>
 				<a class="footer-brand" href="<?php echo HTTP_PWD; ?>">Clash Of Startup</a>
-				<p>Avec Clash Of Startup, votez pour les meilleurs startup et participez activement à l'avenir de votre école !</p>
+				<p>Avec Clash Of Startup, votez pour les meilleures startups et participez activement à l'avenir de votre école !</p>
 			</div>
 			<div>
 			<h3>CONTACT</h3>

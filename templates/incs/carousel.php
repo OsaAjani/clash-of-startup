@@ -9,7 +9,7 @@
 		<div class="item active">
 			<div class="fill" style="background-image:url('<?php echo HTTP_PWD_IMG; ?>carousel/startup.jpg');"></div>
 			<div class="carousel-caption">
-				<h2>Clash Of Startup, qui sera la meilleur startup ?</h2>
+				<h2>Clash Of Startup, qui sera la meilleure startup ?</h2>
 				<a class="button" href="<?php echo $this->generateUrl('match'); ?>">VOTEZ POUR LES STARTUPS</a>
 			</div>
 		</div>

@@ -26,7 +26,7 @@
 				<div class="block-body">
 					<h2>Aidez vos projets préférés</h2>
 					<div class="line-subtitle"></div>
-					<p>Votez pour vos startups préférés, donnez votre avis et aider à faire émerger les projets qui vous tiennent à coeur.</p>
+					<p>Votez pour vos startups préférées, donnez votre avis et aidez à faire émerger les projets qui vous tiennent à coeur.</p>
 				</div>
 				</div>
 				<div class="col-md-4 col-sm-4">
@@ -34,7 +34,7 @@
 					<i class="fa fa-graduation-cap"></i>
 				</div>
 				<div class="block-body">
-					<h2>Amener à redécouvrir</h2>
+					<h2>Donnez de la visibilité à votre école</h2>
 					<div class="line-subtitle"></div>
 					<p>Participez au futur de votre école en donnant une visibilité nouvelle et accrue aux étudiants et à leurs idées.</p>
 				</div>
