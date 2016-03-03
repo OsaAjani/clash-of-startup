@@ -12,6 +12,7 @@
 		{
 			global $db;
 
+			unset($_SESSION['currentMatch']);
 			$startups = $this->getTwoRandomStartups();
 
 			$texteOne = $this->getRandomPhraseStartups();
@@ -52,7 +53,7 @@
 				echo json_encode($retour);
 				return false;
 			}
-
+			$currentMatch = $_SESSION['currentMatch'];
 			unset($_SESSION['currentMatch']);
 
 			//Si on arrive pas a choper de unes on retourne une erreur
@@ -83,6 +84,12 @@
 				echo json_encode($retour);
 				return false;
 			}
+
+			//On insert le match
+			$startupOne = $db->getFromTableWhere('startups', ['randomid' => $currentMatch[0]])[0];
+			$startupTwo = $db->getFromTableWhere('startups', ['randomid' => $currentMatch[1]])[0];
+			$db->insertIntoTable('matchs', ['startup_id_one' => $startupOne['id'], 'startup_id_two' => $startupTwo['id']]);
+
 
 			$newStartups = $this->getTwoRandomStartups();
 
@@ -119,8 +126,6 @@
 			$startups = [$allStartups[$startupsKeys[0]], $allStartups[$startupsKeys[1]]];
 			$_SESSION['currentMatch'] = isset($_SESSION['currentMatch']) ? $_SESSION['currentMatch'] : []; 
 			
-			$db->insertIntoTable('matchs', ['startup_id_one' => $startups[0]['id'], 'startup_id_two' => $startups[1]['id']]);
-
 			foreach ($startups as $startup)
 			{
 				$_SESSION['currentMatch'][] = $startup['randomid'];

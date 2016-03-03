@@ -64,11 +64,11 @@ function changeUnes(data)
 	var firstUne = jQuery('body').find('#firstUne');
 	var secondUne = jQuery('body').find('#secondUne');
 
-	firstUne.find('img').replaceWith('<img src="' + HTTP_PWD + 'img/unes/' + data.newStartups[0].randomid + '.png' + '" alt="' + data.newStartups[0].nom + '" />');
+	firstUne.find('img').replaceWith('<img src="' + HTTP_PWD + 'img/unes-resize/' + data.newStartups[0].randomid + '.jpg' + '" alt="' + data.newStartups[0].nom + '" />');
 	firstUne.find('.startupNom').text(data.newStartups[0].nom);
 	firstUne.find('.startupDescription').text(data.newStartups[0].description);
 
-	secondUne.find('img').replaceWith('<img src="' + HTTP_PWD + 'img/unes/' + data.newStartups[1].randomid + '.png' + '" alt="' + data.newStartups[1].nom + '" />');
+	secondUne.find('img').replaceWith('<img src="' + HTTP_PWD + 'img/unes-resize/' + data.newStartups[1].randomid + '.jpg' + '" alt="' + data.newStartups[1].nom + '" />');
 	secondUne.find('.startupNom').text(data.newStartups[1].nom);
 	secondUne.find('.startupDescription').text(data.newStartups[1].description);
 

@@ -25,7 +25,7 @@
 					<div class="overlay-portfolio text-center line-height use-for-height">
 						<h3 class="full-height"><?php secho($texteOne); ?></h3>
 					</div>
-					<img src="<?php secho(HTTP_PWD_IMG . 'unes/' . $startups[0]['randomid']); ?>.png" alt="<?php secho($startups[0]['nom']); ?>" />
+					<img src="<?php secho(HTTP_PWD_IMG . 'unes-resize/' . $startups[0]['randomid']); ?>.jpg" alt="<?php secho($startups[0]['nom']); ?>" />
 
 					<br/><hr/><br/>
 
@@ -43,7 +43,7 @@
 					<div class="overlay-portfolio text-center line-height use-for-height">
 						<h3 class="full-height"><?php secho($texteTwo); ?></h3>
 					</div>
-					<img src="<?php secho(HTTP_PWD_IMG . 'unes/' . $startups[1]['randomid']); ?>.png" alt="<?php secho($startups[1]['nom']); ?>" />
+					<img src="<?php secho(HTTP_PWD_IMG . 'unes-resize/' . $startups[1]['randomid']); ?>.jpg" alt="<?php secho($startups[1]['nom']); ?>" />
 
 					<br/><hr/><br/>
 
